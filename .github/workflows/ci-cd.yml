@@ -59,4 +59,4 @@ jobs:
               "branch": "main",
               "clearCache": false
             }' \
-            https://api.render.com/v1/services/<YOUR_SERVICE_ID>/deploys
+            https://api.render.com/v1/services/srv-ctgafq3gbbvc738o4pa0/deploys
