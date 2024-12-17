@@ -7,6 +7,8 @@ import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpExchange;
 
 public class AddingApp {
+    static int v1 = 10;
+    static int v2 = 25;
     public static void main(String[] args) {
         // Устанавливаем порт для прослушивания
         try {
@@ -14,7 +16,7 @@ public class AddingApp {
             server.createContext("/", new HttpHandler() {
                 @Override
                 public void handle(HttpExchange exchange) throws IOException {
-                    String response = String.valueOf(add(2, 4));
+                    String response = String.valueOf(add(v1, v2));
                     exchange.sendResponseHeaders(200, response.getBytes().length);
                     OutputStream os = exchange.getResponseBody();
                     os.write(response.getBytes());
