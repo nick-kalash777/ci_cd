@@ -20,4 +20,5 @@ mvn -version
 
 # Сборка проекта
 echo "Building Java project..."
+mvn clean test
 mvn clean package
